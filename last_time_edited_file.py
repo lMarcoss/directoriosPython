@@ -20,7 +20,4 @@ for filename in find_files(os.getcwd(), '*'):
 	last_time = datetime.fromtimestamp(os.path.getmtime(filename)).strftime('%Y-%m-%d %H:%M:%S')
 	last_time_object = datetime.strptime(last_time, '%Y-%m-%d %H:%M:%S')
 	if(last_time_object > datetime_object):
-		print(last_time,last_time_object, '->', datetime_str,datetime_object)
 		print(last_time, '->', filename)
-
-	
